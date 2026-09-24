@@ -56,9 +56,9 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 
 ## 🔓 Open-Source GitHub Projects
 
-Sorted by GitHub star counts (descending):
+Sorted by GitHub Stars_Counts (descending):
 
-| Project / Repository | GitHub Stars | Focus / Primary Use Case | Description |
+| Project / Repository | GitHub_Stars | Focus / Primary Use Case | Description |
 | :--- | :--- | :--- | :--- |
 | **[NVIDIA garak](https://github.com/NVIDIA/garak)** | [<img src="https://img.shields.io/github/stars/NVIDIA/garak?style=social&color=white" alt="garak Stars"/>](https://github.com/NVIDIA/garak/stargazers) | Automated LLM Vulnerability Scanner | Generative AI Red-teaming & Vulnerability Scanner for probing hallucination, jailbreaks, prompt injection, and data leakage. |
 | **[Promptfoo](https://github.com/promptfoo/promptfoo)** | [<img src="https://img.shields.io/github/stars/promptfoo/promptfoo?style=social&color=white" alt="promptfoo Stars"/>](https://github.com/promptfoo/promptfoo/stargazers) | Red-teaming & Security CI/CD | CLI and library for evaluating LLM output quality, prompt injection resilience, security red-teaming, and regression testing. |
@@ -102,7 +102,7 @@ If you find this repository helpful in securing your AI models, LLM pipelines, o
 
 1. Fork the repository.
 2. Add/edit entries in `README.md` (following the existing table format).
-3. Ensure entries include links, pricing/star badges, and factual descriptions.
+3. Ensure entries include links, pricing/Stars_Badges, and factual descriptions.
 4. Submit a Pull Request with a clear summary of your additions.
 
 ---
