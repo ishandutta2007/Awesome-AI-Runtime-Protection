@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <style>
+      @keyframes pulseRing {
+        0% { transform: scale(0.95); opacity: 0.3; }
+        50% { transform: scale(1.05); opacity: 0.8; }
+        100% { transform: scale(0.95); opacity: 0.3; }
+      }
+      @keyframes floatParticle {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+      }
+      @keyframes scanline {
+        0% { transform: translateY(-100px); }
+        100% { transform: translateY(400px); }
+      }
+      .dynamic-pulse { animation: pulseRing 4s infinite ease-in-out; transform-origin: 150px 150px; }
+      .dynamic-float1 { animation: floatParticle 5s infinite ease-in-out; }
+      .dynamic-float2 { animation: floatParticle 7s infinite ease-in-out 1s; }
+      .dynamic-scan { animation: scanline 6s infinite linear; opacity: 0.15; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Dynamic Animated Grid Pattern -->
+  <g stroke="#334155" stroke-width="0.5" stroke-opacity="0.4">
+    <line x1="0" y1="50" x2="1200" y2="50" />
+    <line x1="0" y1="100" x2="1200" y2="100" />
+    <line x1="0" y1="150" x2="1200" y2="150" />
+    <line x1="0" y1="200" x2="1200" y2="200" />
+    <line x1="0" y1="250" x2="1200" y2="250" />
+    <line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="400" y1="0" x2="400" y2="300" />
+    <line x1="600" y1="0" x2="600" y2="300" />
+    <line x1="800" y1="0" x2="800" y2="300" />
+    <line x1="1000" y1="0" x2="1000" y2="300" />
+  </g>
+
+  <!-- Background Dynamic Glowing Shield/Circles (Behind Text) -->
+  <g class="dynamic-pulse" filter="url(#glow)">
+    <circle cx="150" cy="150" r="90" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <circle cx="150" cy="150" r="60" fill="url(#shieldGrad)" />
+  </g>
+
+  <!-- Floating Background Particles (Behind Text) -->
+  <g fill="#818cf8" opacity="0.6">
+    <circle cx="950" cy="70" r="4" class="dynamic-float1"/>
+    <circle cx="1050" cy="220" r="6" class="dynamic-float2"/>
+    <circle cx="850" cy="240" r="3" class="dynamic-float1"/>
+    <circle cx="1100" cy="110" r="5" class="dynamic-float2"/>
+  </g>
+
+  <!-- Scanning Line Effect -->
+  <line class="dynamic-scan" x1="0" y1="0" x2="1200" y2="0" stroke="#38bdf8" stroke-width="4" filter="url(#glow)"/>
+
+  <!-- Foreground Graphic Icon (Shield & AI Matrix) -->
+  <g transform="translate(110, 110)">
+    <path d="M40 0 L75 15 V45 C75 68 55 88 40 95 C25 88 5 68 5 45 V15 Z" fill="none" stroke="#38bdf8" stroke-width="4" filter="url(#glow)"/>
+    <path d="M40 15 L60 25 V45 C60 58 48 71 40 76 C32 71 20 58 20 45 V25 Z" fill="#818cf8" opacity="0.4"/>
+    <circle cx="40" cy="45" r="8" fill="#38bdf8"/>
+  </g>
+
+  <!-- Foreground Title and Subtitle -->
+  <text x="250" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="46" fill="url(#textGrad)" filter="url(#glow)" letter-spacing="1">
+    AWESOME AI RUNTIME PROTECTION
+  </text>
+  
+  <text x="251" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="500" font-size="20" fill="#94a3b8" letter-spacing="0.5">
+    🛡️ Curated LLM Firewalls, Guardrails, Prompt Injection Defense &amp; Agent Runtime Security
+  </text>
+
+  <!-- Foreground Tech Badges / Pills -->
+  <g transform="translate(251, 215)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="140" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+    <text x="70" y="18" fill="#38bdf8" text-anchor="middle">LLM FIREWALLS</text>
+
+    <!-- Pill 2 -->
+    <rect x="155" y="0" width="160" height="28" rx="14" fill="#1e293b" stroke="#818cf8" stroke-width="1"/>
+    <text x="235" y="18" fill="#818cf8" text-anchor="middle">PROMPT INJECTION</text>
+
+    <!-- Pill 3 -->
+    <rect x="330" y="0" width="160" height="28" rx="14" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+    <text x="410" y="18" fill="#c084fc" text-anchor="middle">AGENT GUARDRAILS</text>
+
+    <!-- Pill 4 -->
+    <rect x="505" y="0" width="150" height="28" rx="14" fill="#1e293b" stroke="#34d399" stroke-width="1"/>
+    <text x="580" y="18" fill="#34d399" text-anchor="middle">AI DEFENSE &amp; SOC</text>
+  </g>
+</svg>
