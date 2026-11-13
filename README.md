@@ -51,6 +51,7 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 | **[Fiddler AI](https://www.fiddler.ai/)** | **$99 Million** Total Funding ($30M Series C) | Developer tier starting at $0.002 per trace / Enterprise custom | Free tier: 10,000 traces/month ($0 forever plan) | ML observability & LLM monitoring platform providing real-time safety guardrails and model drift protection. |
 | **[Arthur AI](https://www.arthur.ai/)** | **$65.7 Million** Total Funding ($42M Series B) | Premium tier starting at $60/month | Free tier: 4 use cases forever ($0/month plan) | Model monitoring and LLM runtime control platform featuring output validation and prompt injection defenses. |
 | **[Aporia](https://www.aporia.com/)** (Coralogix) | **$30 Million** Prior Funding (Acquired by Coralogix) | Starter tier: $0 base / Scaler tier custom quote | Free tier: 14-day full access free trial (up to 50k predictions) | ML observability & AI guardrails engine offering real-time prompt injection blocking and system monitoring. |
+| **[Adversarial Feed](https://adversarialfeed.com/)** | **Bootstrapped** (Synergeia Labs LLC, no external funding) | $15/month (or $120/year) | Free tier: 10-test sample pack | Monthly subscription delivering a fresh pack of 100 adversarial tests for AI agents (prompt injection, jailbreaks, tool misuse, data exfiltration, multi-turn), with a Python runner and briefing for agent red teaming. |
 
 ---
 
